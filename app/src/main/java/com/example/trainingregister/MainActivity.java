@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             if (validator.checkFields(name, lastname)){
                 Toast.makeText(this, "Los datos fueron guardados exitosamente.", Toast.LENGTH_SHORT).show();
+                validator.clearFields(nameField, lastNameField);
             }else{
                 Toast.makeText(MainActivity.this, "Los campos no pueden estar vacios", Toast.LENGTH_SHORT).show();
             }
