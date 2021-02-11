@@ -3,8 +3,10 @@
     <string name="cancel">Cancel</string>
     <string name="login_title">Training register</string>
     <string name="user_field">username</string>
+    <string name="names">Nombres</string>
+    <string name="lastnames">Apellidos</string>
     <string name="pass_field">password</string>
-    <string name="login_button">LOGIN</string>
+    <string name="login_button">START</string>
     <string name="no_count">create an account</string>
     <string name="forgot_password">Forgot password</string>
 </resources>
