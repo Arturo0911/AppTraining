@@ -9,4 +9,17 @@
     <string name="login_button">START</string>
     <string name="no_count">create an account</string>
     <string name="forgot_password">Forgot password</string>
+    <string name="trainingtitle">Completa la siguiente información</string>
+    <string name="getdate">Día de hoy</string>
+    <string name="generateControl">Generar control</string>
+    <string name="modifydata">Modificar datos</string>
+    <string name="vercontrol">Ver control</string>
+    <string name="height">Altura</string>
+    <string name="Weight">Peso</string>
+
+    <array name="typetraining">
+        <item>Cardio</item>
+        <item>Potencia</item>
+        <item>Cardio y Potencia</item>
+    </array>
 </resources>
