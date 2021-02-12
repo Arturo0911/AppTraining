@@ -2,6 +2,7 @@ package com.example.trainingregister;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -13,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
 
     private TextInputEditText nameField;
     private TextInputEditText lastNameField;
-    Validation validator = null;
+    private Intent intent = null;
+    private Validation validator = null;
 
 
     public void initLoginButton(View view){
 
-        //Toast.makeText(MainActivity.this, "Hola amorcito bello", Toast.LENGTH_SHORT).show();
         String name = nameField.getText().toString();
         String lastname = lastNameField.getText().toString();
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
             if (validator.checkFields(name, lastname)){
                 Toast.makeText(this, "Los datos fueron guardados exitosamente.", Toast.LENGTH_SHORT).show();
                 validator.clearFields(nameField, lastNameField);
+                intent = new Intent(MainActivity.this, MainPanel.class);
+                startActivity(intent);
             }else{
                 Toast.makeText(MainActivity.this, "Los campos no pueden estar vacios", Toast.LENGTH_SHORT).show();
             }
@@ -34,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Error: "+e.toString(), Toast.LENGTH_SHORT).show();
         }
 
-
-        //Toast.makeText(this, "usuario: "+userField.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
