@@ -63,7 +63,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/currentDay"
+                                android:id="@+id/currentDateField"
                                 android:inputType="datetime"
                                 android:enabled="false"
                                 android:layout_width="match_parent"
