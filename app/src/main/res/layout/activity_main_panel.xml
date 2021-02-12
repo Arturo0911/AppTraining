@@ -65,7 +65,6 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/currentDateField"
                                 android:inputType="datetime"
-                                android:enabled="false"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 />
@@ -131,6 +130,7 @@
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/weightField"
+                                android:inputType="numberDecimal"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 />

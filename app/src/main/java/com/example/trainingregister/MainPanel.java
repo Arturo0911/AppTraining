@@ -32,6 +32,7 @@ public class MainPanel extends AppCompatActivity {
         ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(MainPanel.this, R.array.typetraining, R.layout.support_simple_spinner_dropdown_item);
         arrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinnerTypeTraining.setAdapter(arrayAdapter);
+
     }
 
 
